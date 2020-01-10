@@ -1,10 +1,20 @@
 
-.keys{
+body{
+    background-color: #1C3144;
+    margin: 0;
+}
+.keys {
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: slategray;
 }
+
 .key {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
     border: 4px solid black;
     border-radius: 5px;
     margin: .5rem;
@@ -14,26 +24,96 @@
     width: 100px;
     height: 100px;
     text-align: center;
-    color: aqua;
-    background: rgba(0,0,0,0.4);
+    color: #EAE8FF;
+    background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 5px black;
     overflow: hidden;
+    
 }
-#space{
-    width: 200px;
+
+#space {
+    width: 500px;
+    margin: auto;
 }
+
 .playing {
     transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 10px #ffc600;
+    border-color: #EDAE49;
+    box-shadow: 0 0 10px #EDAE49;
 }
+
 kbd {
     display: block;
     font-size: 40px;
-}   
+}
+
 .loopBtn {
     height: 25px;
     width: 20px;
-    display: block;
+    /* display: block; */
     color: aqua;
+    fill: none;
+    background-color: blue;
+}
+.looped{
+    border: none;
+    border-radius: 5px;
+    filter: opacity(.55);
+}
+#stop{
+    border: none;
+    border-radius: 5px;
+    filter: opacity(.55);
+}
+.looping {
+    color: brown;
+    animation: looping;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes looping {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+.buttomLoopText {
+    color: white;
+}
+#bottomText{
+    margin: 1em;
+}
+#bottomText ul{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #EAE8FF;
+    list-style-type: upper-roman;
+}
+footer p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #EAE8FF;
+    font-size: 20px;
+}
+a{
+   text-decoration: none;
+   color: #EAE8FF;
+   font-size: 24px;
+}
+#top h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1em;
+    margin-bottom: 0em;
+    text-align: center;
+    color: #EAE8FF;
+    font-size: 30px;
+    font-weight: bold;
 }

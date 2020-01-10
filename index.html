@@ -10,16 +10,72 @@
 </head>
 
 <body>
+    <div id="top">
+        <h3>808 Meme</h3>
+    </div>
     <div class="keys">
-        <!-- universal commands -->
-        <div data-key="32" id="space" class="key space">
-            <kbd>Space</kbd>
-            <span class="sound"><button id="stop">STOP </button></span>
+        <!-- //drum sounds and beats -->
+        <div data-key="49" class="key">
+            <kbd>1</kbd>
+            <span class="sound">Kick 1</span>
+            <span class="loopPlayBack"><button class="looped"=true">&#8734;</button></span>
         </div>
-        <!-- vocal samples -->
+        <div data-key="50" class="key">
+            <kbd>2</kbd>
+            <span class="sound">hh 1</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="51" class="key">
+            <kbd>3</kbd>
+            <span class="sound">Clap 1</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <!-- 808 -->
+        <div data-key="52" class="key">
+            <kbd>4</kbd>
+            <span class="sound">808 Kick</span>
+            <span class="loopPlayBack"><button class="looped"=true">&#8734;</button></span>
+        </div>
+        <div data-key="53" class="key">
+            <kbd>5</kbd>
+            <span class="sound">808 Snare</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="54" class="key">
+            <kbd>6</kbd>
+            <span class="sound">808 Clap</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="55" class="key">
+            <kbd>7</kbd>
+            <span class="sound">Ride</span>
+            <span class="loopPlayBack"><button class="looped"=true">&#8734;</button></span>
+        </div>
+        <div data-key="56" class="key">
+            <kbd>8</kbd>
+            <span class="sound">FX</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="57" class="key">
+            <kbd>9</kbd>
+            <span class="sound">Trap Beat</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+
+        <audio data-key="49" src="assets/bass_sample.mp3"></audio>
+        <audio data-key="50" src="assets/hh_sample.mp3"></audio>
+        <audio data-key="51" src="assets/clap_sample.mp3"></audio>
+        <audio data-key="52" src="assets/MM-TDHQ-808-08.wav"></audio>
+        <audio data-key="53" src="assets/MM-TDHQ-Snare-12.wav"></audio>
+        <audio data-key="54" src="assets/MM-TDHQ-Clean808-HC.wav"></audio>
+        <audio data-key="55" src="assets/MM-TDHQ-Rides-14.wav"></audio>
+        <audio data-key="56" src="assets/MM-TDHQ-FX-04.wav"></audio>
+        <audio data-key="57" src="assets/trapBeat1-115bpm.wav"></audio>
+        <hr>
+        <br>
         <div data-key="81" class="key">
             <kbd>Q</kbd>
-            <span class="sound">Why </span>
+            <span class="sound">Full Audio</span>
             <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
 
         </div>
@@ -65,7 +121,55 @@
             <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
 
         </div>
-        <div data-key="79" class="key">
+        <hr>
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Uhh</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">Comment</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">To Want</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">Why</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">save</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">plan</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">guilty</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">I Get</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div>
+        <hr>
+
+        <!-- <div data-key="79" class="key">
             <kbd>O</kbd>
             <span class="sound">bass</span>
             <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
@@ -75,56 +179,45 @@
             <kbd>P</kbd>
             <span class="sound">clap</span>
             <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+        </div> -->
 
-        </div>
 
-        <audio data-key="81" src="assets/whyDontYouTakeShowers.mp3"></audio>
+        <audio data-key="65" src="assets/uhh.mp3"></audio>
+        <audio data-key="81" src="assets/lovely peaches on why she doesnt shower.mp3"></audio>
+        <audio data-key="83" src="assets/NoComment.mp3"></audio>
+        <audio data-key="68" src="assets/usedToWantIt.mp3"></audio>
+        <audio data-key="82" src="assets/itsATrend.mp3"></audio>
+        <audio data-key="70" src="assets/whyDontYouTakeShowers.mp3"></audio>
         <audio data-key="87" src="assets/amIGonnaDie.mp3"></audio>
         <audio data-key="69" src="assets/amIGonnaStarve.mp3"></audio>
         <audio data-key="82" src="assets/itsATrend.mp3"></audio>
         <audio data-key="84" src="assets/nessarity.mp3"></audio>
         <audio data-key="89" src="assets/theyCannotTell.mp3"></audio>
         <audio data-key="85" src="assets/whyDoIBath.mp3"></audio>
+        <!-- <audio data-key="79" src="assets/bass_sample.mp3"></audio>
+        <audio data-key="80" src="assets/clap_sample.mp3"></audio> -->
         <audio data-key="73" src="assets/whyDoIShower.mp3"></audio>
-        <audio data-key="79" src="assets/Shower Full"></audio>
-        <audio data-key="80" src="assets/bass_sample.mp3"></audio>
+        <audio data-key="71" src="assets/saveSomeMoney.mp3"></audio>
+        <audio data-key="72" src="assets/planOnLosingWeight.mp3"></audio>
+        <audio data-key="74" src="assets/guiltyWantIt.mp3"></audio>
+        <audio data-key="75" src="assets/whatDoIGet.mp3"></audio>
+
 
 
 
 
 
         <!-- Beats -->
-     
-        <!-- //drum sounds and beats -->
-        <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound">clap</span>
-            <span class="loopPlayBack"><button class="looped" = true">&#8734;</button></span>
 
-        </div>
-        <div data-key="83" class="key">
-            <kbd>S</kbd>
-            <span class="sound">hh</span>
-            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
 
-        </div>
-        <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound">bass</span>
-            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
-
-        </div>
-        <audio data-key="65" src="assets/clap_sample.mp3"></audio>
-        <audio data-key="83" src="assets/hh_sample.mp3"></audio>
-        <audio data-key="68" src="assets/bass_sample.mp3"></audio>
         <!-- Beats -->
-        <div data-key="70" class="key">
+        <!-- <div data-key="70" class="key">
             <kbd>F</kbd>
             <span class="sound">Beat 1</span>
             <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
 
         </div>
-        <audio data-key="70" src="assets/trapBeat1-115bpm.wav"></audio>
+        <audio data-key="70" src="assets/trapBeat1-115bpm.wav"></audio> -->
         <!--***************** -->
         <!-- pads -->
         <div data-key="90" class="key">
@@ -136,24 +229,71 @@
         <div data-key="88" class="key">
             <kbd>X</kbd>
             <span class="sound">Pad 2</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+        <div data-key="67" class="key">
+            <kbd>C</kbd>
+            <span class="sound">Piano</span>
+            <span class="loopPlayBack"><button class="looped">&#8734;</button></span>
+
+        </div>
+        <!-- <div data-key="86" class="key">
+            <kbd>V</kbd>
+            <span class="sound">Pad 3</span>
             <span class="loopPlayBack"><button class="loopedx">&#8734;</button></span>
 
         </div>
+        <div data-key="66" class="key">
+            <kbd>B</kbd>
+            <span class="sound">Pad 4</span>
+            <span class="loopPlayBack"><button class="loopedx">&#8734;</button></span>
+
+        </div>
+        <div data-key="78" class="key">
+            <kbd>N</kbd>
+            <span class="sound">Pad 5</span>
+            <span class="loopPlayBack"><button class="loopedx">&#8734;</button></span>
+
+        </div>
+        <div data-key="77" class="key">
+            <kbd>M</kbd>
+            <span class="sound">Pad 6</span>
+            <span class="loopPlayBack"><button class="loopedx">&#8734;</button></span>
+
+        </div> -->
         <audio data-key="90" src="assets/darkPad1.wav"></audio>
         <audio data-key="88" src="assets/darkPad2.wav"></audio>
+        <audio data-key="67" src="assets/trapPiano.wav"></audio>
+        <!-- <audio data-key="86" src="assets/"></audio>
+        <audio data-key="66" src="assets/darkPad1.wav"></audio>
+        <audio data-key="78" src="assets/darkPad2.wav"></audio>
+        <audio data-key="77" src="assets/darkPad2.wav"></audio> -->
 
 
     </div>
+    <!-- universal commands -->
+    <div data-key="32" id="space" class="key space">
+        <!-- <kbd>Space</kbd> -->
+        <h2>Click box to stop</h2>
+        <span class="sound"><button id="stop">STOP </button></span>
+    </div>
+    <!-- vocal samples -->
     </div>
 
-    <!-- beats -->
-
-    <!-- pads -->
-
-
-
-
-
+    <div id="bottomText">
+        <p>
+         
+            <ul>
+                <li>Press corresponding key to play sound.</li>
+                <li>Click infinty button to loop sound.</li>
+                <li>Double Click infinty button to stop loop.</li>
+                <li>Pressing box will stop all sounds.</li>
+                <li>Have fun and check out my website: <a href="www.danluf.com">www.danluf.com</a>.</li>
+            </ul>
+        </p>
+    </div>
+    <footer>   <p>This is a clunky version, feel free to clone my repo and improve it.</p></footer>
 
     <script src="app.js"></script>
 </body>

@@ -5,43 +5,62 @@ function removeTransition(e) {
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
-
+const bottomText = document.getElementById('buttomText');
 
 window.addEventListener('keydown', function (e) {
     {
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const audios = document.querySelectorAll(`audio[data-key="${e.keyCode}"]`);
+
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
         const loopBtn = document.querySelectorAll('.looped');
-         this.document.onkeydown = function (e) {
-            console.log("space")
-            if (e.which == 32) {
-                audio.pause();
+        const space = document.getElementById('space');
+        const spanText = document.querySelectorAll('.sound');
+
+        document.onkeydown = function (e) {
+            if (e.keycode === 32) {
+                audio.pause()
+                console.log("space")
             }
         }
         document.querySelector('#stop').addEventListener('click', function () {
             audio.pause();
             audio.currentTime = 0;
         })
-        
-        // const source = audio.src;
+
+        if (e.keycode == 65) {
+            audio.loop = true;
+        }
         // console.log(source)
         // looping functions
         function loopPlay() {
-            audio.loop = true;
+            
+
+            console.log("looping");
+            audio.loop = true
+            const loopShow = document.createElement('h4');
+            loopShow.innerText = "looping";
+            loopShow.classList.add('bottomLoopText');
+            bottomText.appendChild(loopShow);           1 
         }
 
         function stopLoop() {
             audio.loop = false;
+            console.log('stop loop');
+            
         }
 
         function getSource() {
-            console.log(source);
+            console.log(audio.src);
         }
-       
 
-        console.log(e.which);
+
+        console.log(e.which, e.code);
         if (!audio) return;
+        space.addEventListener('click', () => {
+            audio.pause();
+        });
+
+
         loopBtn.forEach(btn => btn.addEventListener('click', loopPlay));
         loopBtn.forEach(btn => btn.addEventListener('dblclick', stopLoop));
         loopBtn.forEach(btn => btn.addEventListener('mouseover', getSource));
@@ -49,7 +68,10 @@ window.addEventListener('keydown', function (e) {
 
         audio.currentTime = 0;
         audio.play();
-        // audio.loop = true;
+
+        // if(audio.loop = true){
+        //     btnBox.classList.add('looping');
+        // };
         key.classList.add('playing');
         return audio;
     }
